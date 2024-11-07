@@ -1,0 +1,71 @@
+:root {
+  --Bar-radius: 10px;
+  --background-inside: hsl(0, 0%, 96%);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: min(100px, 9vw);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 40px;
+  opacity: 40%;
+}
+
+#url-bar {
+  width: 800px;
+  height: 60px;
+
+  margin: 0 auto;
+
+  background: none;
+  border-radius: var(--Bar-radius);
+
+  display: flex;
+  gap: 8px;
+}
+
+#url {
+  border-radius: var(--Bar-radius);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+
+  flex: 8;
+  font-size: 20px;
+  padding-left: 10px;
+
+  background-color: var(--background-inside);
+}
+
+button {
+  aspect-ratio: 1/1;
+  background-color: var(--background-inside);
+}
+
+#redirect {
+  border-radius: var(--Bar-radius);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#copy {
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 93%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 100%);
+}
