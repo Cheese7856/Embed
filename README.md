@@ -8,3 +8,5 @@ https://cheese7856.github.io/Embed/redirect.html?link=%s
 ```
 
 Now, if you need to copy the youtube URL to an embed URL, you can open new tab, press new tab and enter the shortcut followed by a space and paste the youtube URL you want to convert.
+
+[![A video on how to add a custom search engiene in google chrome](https://img.youtube.com/vi/WgTzn-CHHR4/0.jpg)](https://www.youtube.com/watch?v=WgTzn-CHHR4)
