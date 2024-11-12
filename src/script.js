@@ -45,3 +45,23 @@ redirectButton.addEventListener("click", function () {
     alert("This is not a valid Youtube URL!");
   }
 });
+
+function copyText() {
+  // Teksten du vil kopiere
+  const tekst = "https://cheese7856.github.io/Embed/redirect.html?link=%s";
+
+  // Opprett et midlertidig element for å kopiere teksten
+  const midlertidigInput = document.createElement("input");
+  midlertidigInput.value = tekst;
+  document.body.appendChild(midlertidigInput);
+
+  // Marker og kopier teksten
+  midlertidigInput.select();
+  document.execCommand("copy");
+
+  // Fjern det midlertidige elementet
+  document.body.removeChild(midlertidigInput);
+
+  // Valgfritt: Vis en melding
+  alert("The URL has been copied!");
+}
