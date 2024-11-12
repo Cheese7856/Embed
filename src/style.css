@@ -1,6 +1,9 @@
 :root {
   --Bar-radius: 10px;
+  --Bar-radius-inside: 6px;
+
   --background-inside: hsl(0, 0%, 96%);
+  --bar-height: 60px;
 }
 
 body {
@@ -14,16 +17,16 @@ h1 {
   margin-bottom: 10px;
 }
 
-h2 {
+h3 {
   text-align: center;
   font-weight: normal;
   margin-top: 10px;
-  font-size: 40px;
+  font-size: min(40px, 8vw);
   opacity: 40%;
 }
 
 #url-bar {
-  width: 800px;
+  width: 90%;
   height: 60px;
 
   margin: 0 auto;
@@ -33,18 +36,6 @@ h2 {
 
   display: flex;
   gap: 8px;
-}
-
-#url {
-  border-radius: var(--Bar-radius);
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-
-  flex: 8;
-  font-size: 20px;
-  padding-left: 10px;
-
-  background-color: var(--background-inside);
 }
 
 button {
@@ -63,9 +54,64 @@ button {
 }
 
 button:hover {
-  background-color: hsl(0, 0%, 93%);
+  background-color: hsl(0, 0%, 90%);
 }
 
 button:active {
   background-color: hsl(0, 0%, 100%);
+}
+
+#info {
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  background-color: var(--background-inside);
+  border-radius: 10px;
+
+  border: 3px solid black;
+}
+
+.container {
+  display: flex;
+  align-items: stretch; /* Sørger for at tekstboksen fyller containerens høyde */
+  gap: 8px;
+  width: min(800px, 90%);
+  height: var(--bar-height);
+  margin: 0 auto;
+}
+
+.textbox {
+  flex: 1;
+  min-width: 0; /* Hindrer at tekstboksen sprenger ut av containeren */
+
+  font-size: 20px;
+  padding-left: 10px;
+  background-color: var(--background-inside);
+
+  border-radius: var(--Bar-radius) var(--Bar-radius-inside)
+    var(--Bar-radius-inside) var(--Bar-radius);
+}
+
+button {
+  width: var(--bar-height); /* Sett ønsket bredde */
+  height: var(--bar-height); /* Samme som bredde for å beholde 1:1 forhold */
+
+  padding: 0; /* Fjerner ekstra padding */
+  font-size: 1em; /* Justerer tekststørrelsen */
+  background-color: var(--background-inside);
+}
+
+h2 {
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  width: min(550px, 99%);
+  aspect-ratio: 16/9;
 }
