@@ -2,21 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="src/style.css" />
     <title>Youtube to embed</title>
+    <meta name="description" content="A low effort website that turns a youtube URL into an embed URL" />
   </head>
   <body>
     <h1>Youtube to embed url</h1>
-    <h2>I know, very boring...</h2>
-    <div id="url-bar">
-      <input type="url" name="Youtube url" id="url" placeholder="Youtube url" />
+    <h3>I know, very boring...</h3>
+
+    <div class="container">
+      <input type="text" id="url" class="textbox" placeholder="Youtube URL" />
       <button id="copy">
         <img src="icons/copy.svg" alt="Ikon" width="45" height="45" />
       </button>
       <button id="redirect">
         <img src="icons/new.svg" alt="Ikon" width="45" height="45" />
       </button>
+    </div>
+
+    <div id="info">
+      <h2>How to add the youtube to embed "search engiene"</h2>
+      <p>If you need to make an embed URL fast without opening a website, you can make a custom "seacrh engiene" in google chrome. You can follow theese steps to make it.</p>
+      <ul>
+        <li>Click on the three dots on the upper right corner, and then click settings.</li>
+        <li>Find the search engiene tab, and click on it.</li>
+        <li>Click on the add new button</li>
+        <li>Type the name and shortcut you want</li>
+        <li>Paste in this text into the URL bar <a href="#" onclick="copyText()">Copy</a></li>
+        <li>Click add</li>
+      </ul>
+
+      <iframe src="https://www.youtube.com/embed/WgTzn-CHHR4?fs=1" allowfullscreen> </iframe>
     </div>
     <script src="src/script.js"></script>
   </body>
