@@ -13,7 +13,16 @@ if (encodedLink) {
   // Sjekker om linken er en YouTube-link
   if (decodedLink.includes("youtube.com/watch?v=")) {
     // Bytter ut "watch?v=" med "embed/"
-    const embedLink = decodedLink.replace("watch?v=", "embed/");
+
+    videoId = decodedLink.split("v=")[1].split("&")[0]
+
+    const embedLink = "https://www.youtube.com/embed/" + videoId;
+
+    // Omdirigerer til den nye embed-linken
+    window.location.href = embedLink;
+  }
+  else if (decodedLink.includes("youtube.com/shorts/")) {
+    const embedLink = decodedLink.replace("shorts", "embed");
 
     // Omdirigerer til den nye embed-linken
     window.location.href = embedLink;
