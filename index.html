@@ -4,37 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Youtube to embed</title>
+    <title>Youtube til embed</title>
     <meta name="description" content="A low effort website that turns a youtube URL into an embed URL" />
     <meta name="keywords" content="Embed, Youtube, Useless, Boring, Redirect" />
     <meta name="author" content="Elander Olsen" />
   </head>
   <body>
-    <h1>Youtube to embed url</h1>
-    <h3>I know, very boring...</h3>
+    <h1>Youtube til embed</h1>
+    <h3>Se på Youtube ublokkert</h3>
 
     <div class="container">
       <input type="text" id="url" class="textbox" placeholder="Youtube URL" />
       <button id="copy">
-        <img src="icons/copy.svg" alt="Ikon" width="45" height="45" />
+        <img src="icons/copy.svg" alt="Kopier" width="45" height="45" />
       </button>
       <button id="redirect">
-        <img src="icons/new.svg" alt="Ikon" width="45" height="45" />
+        <img src="icons/new.svg" alt="Åpne" width="45" height="45" />
       </button>
     </div>
 
     <div id="info">
-      <h2>Why did I make this?</h2>
-      <p>I did it beacuse my school has blocked youtube, but I found out that with watching the youtube video on embed works, so I made a site where I can use it as a search engiene and it redirect you to the embed link!</p>
-      <h2>How to add the youtube to embed "search engiene"</h2>
-      <p>If you need to make an embed URL fast without opening a website, you can make a custom "seacrh engiene" in google chrome. You can follow theese steps to make it.</p>
+      <h2>Hva er dette prosjektet?</h2>
+      <p>Ostepop</p>
+      <h2>Hvordan legge til siden som en "søkemotor"</h2>
+      <p>
+        Det er anbefalt å legge til siden som en "søkemotor" på nettleserinnstilingene dine slik at man kan raskt åpne Youtube videoer uten å gå inn på nettsiden først. Her er en rask metode til å
+        legge til nettsiden som en søkemotor.
+      </p>
       <ul>
-        <li>Click on the three dots on the upper right corner, and then click settings.</li>
-        <li>Find the search engiene tab, and click on it.</li>
-        <li>Click on the add new button</li>
-        <li>Type the name and shortcut you want</li>
-        <li>Paste in this text into the URL bar <a href="#" onclick="copyText()">Copy</a></li>
-        <li>Click add</li>
+        <li>På nettleseren, klikk på de tre dottene øvertst til høyre, og trykk på innstlinger.</li>
+        <li>Finn katerogien "Søkemotor" og klikk inn på den.</li>
+        <li>Trykk på knappen som står "Administrer søkemotorer og nettstedsøk"</li>
+        <li>Bla ned til du finner en "Legg til" knapp og trykk på den.</li>
+        <li>Skriv ned navnet og en snarvei som er lett å huske.</li>
+        <li>Under nettadresse, lim inn denne linken til høyre. <a href="#" onclick="copyText()">https://cheese7856.github.io/Embed/redirect.html?link=%s</a></li>
+        <li>Trykk legg til og gå ut av siden.</li>
+        <li>Finn en youtube video du vil se og kopier lenken.</li>
+        <li>I url-baren, skriv snarveien sammen med mellomrom, og lim inn url-en.</li>
       </ul>
 
       <iframe src="https://www.youtube.com/embed/WgTzn-CHHR4?fs=1" allowfullscreen> </iframe>

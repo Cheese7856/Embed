@@ -29,7 +29,7 @@ copyButton.addEventListener("click", function () {
 
     alert("Embed URL kopiert: " + embedUrl);
   } else {
-    alert("This is not a valid Youtube URL!");
+    alert("Youtube URL-en er ikke gyldig.");
   }
 });
 
@@ -42,7 +42,7 @@ redirectButton.addEventListener("click", function () {
     // Omdirigerer til embed-lenken uten å endre input-feltet
     window.location.href = embedUrl;
   } else {
-    alert("This is not a valid Youtube URL!");
+    alert("Youtube URL-en er ikke gyldig.");
   }
 });
 
@@ -63,5 +63,5 @@ function copyText() {
   document.body.removeChild(midlertidigInput);
 
   // Valgfritt: Vis en melding
-  alert("The URL has been copied!");
+  alert("URL-en har blir kopiert!");
 }

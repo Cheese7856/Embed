@@ -30,7 +30,7 @@ if (encodedLink) {
     // Lager en <p>-melding hvis det ikke er en YouTube-link
     const message = document.createElement("p");
     message.textContent =
-      "Kunne ikke redirecte. URL-en er ikke en gyldig YouTube URL.";
+      "Kunne ikke omdirigere. URL-en er ikke en gyldig YouTube URL.";
     document.body.appendChild(message);
   }
 } else {
